@@ -1,0 +1,21 @@
+[package]
+name = "ascii-camera-dithering"
+version = "0.1.0"
+edition = "2021"
+authors = ["mazynoah"]
+description = """
+A rust application made using the tui and image crate that takes your camera feed and transforms it into ascii art in real time.
+"""
+repository = "https://github.com/mazynoah/Ascii-Camera-Dithering"
+exclude = [".github"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossterm = "0.25.0"
+image = "0.24.5"
+tui = "0.19.0"
+
+[dependencies.nokhwa]
+version = "0.10.0"
+# Use the native input backends, enable WGPU integration
+features = ["input-native", "output-wgpu"]
